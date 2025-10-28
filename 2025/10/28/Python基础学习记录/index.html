@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 8.1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"lehuang0212.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="前言本篇文章为我的第一篇正式文章，用于记录我的python基础学习。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python基础学习记录">
+<meta property="og:url" content="https://lehuang0212.github.io/2025/10/28/Python%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/index.html">
+<meta property="og:site_name" content="乐小煌的个人博客">
+<meta property="og:description" content="前言本篇文章为我的第一篇正式文章，用于记录我的python基础学习。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-10-28T14:21:15.000Z">
+<meta property="article:modified_time" content="2025-10-28T15:50:15.524Z">
+<meta property="article:author" content="Unique_lehuang">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://lehuang0212.github.io/2025/10/28/Python%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://lehuang0212.github.io/2025/10/28/Python%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/","path":"2025/10/28/Python基础学习记录/","title":"Python基础学习记录"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Python基础学习记录 | 乐小煌的个人博客</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">乐小煌的个人博客</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">LoveLoveLoveLoveLove---CQR❤CQR---LoveLoveLoveLoveLove</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">Python的基本语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python%E7%9A%84%E5%8F%98%E9%87%8F"><span class="nav-number">1.2.</span> <span class="nav-text">Python的变量</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Unique_lehuang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lehuang0212.github.io/2025/10/28/Python%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Unique_lehuang">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="乐小煌的个人博客">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Python基础学习记录 | 乐小煌的个人博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Python基础学习记录
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2025-10-28 22:21:15 / 修改时间：23:50:15" itemprop="dateCreated datePublished" datetime="2025-10-28T22:21:15+08:00">2025-10-28</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本篇文章为我的第一篇正式文章，用于记录我的python基础学习。</p>
+<span id="more"></span>
+
+<h2 id="Python的基本语法"><a href="#Python的基本语法" class="headerlink" title="Python的基本语法"></a>Python的基本语法</h2><p>pyton是一门十分简洁的语言，代码没有C++和Java那样严谨至极，每行代码结束也不再需要以分号(;)结尾。</p>
+<p>Python的输出使用print函数，其常规使用方法就是print(内容),但是print()函数仍有很多使用方法。<br>例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 常规用法</span></span><br><span class="line"><span class="built_in">print</span>(<span class="number">123456</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello World!&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你好呀！&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        多行格式输出</span></span><br><span class="line"><span class="string">        111</span></span><br><span class="line"><span class="string">            222</span></span><br><span class="line"><span class="string">                333</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>print()的函数定义为</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(*objects, sep=<span class="string">&#x27; &#x27;</span>, end=<span class="string">&#x27;\n&#x27;</span>, file=sys.stdout, flush=<span class="literal">False</span>)</span><br></pre></td></tr></table></figure>
+<p>其中：<br>objects –&gt; 对象，表示可以一次输出多个对象。输出多个对象时，需要用 , 分隔</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tmp1 = <span class="number">1</span></span><br><span class="line">tmp2 = <span class="number">2</span></span><br><span class="line"><span class="built_in">print</span>(tmp1,tmp2)</span><br><span class="line"><span class="comment"># 输出结果是1 2</span></span><br></pre></td></tr></table></figure>
+<p>sep –&gt; 用来间隔多个对象，默认值是一个空格。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">tmp1 = <span class="number">1</span></span><br><span class="line">tmp2 = <span class="number">2</span></span><br><span class="line"><span class="built_in">print</span>(tmp1,tmp2 sep=<span class="string">&#x27;,&#x27;</span>)</span><br><span class="line"><span class="comment"># 输出结果是1,2</span></span><br><span class="line"><span class="built_in">print</span>(tmp1,tmp2 sep=<span class="string">&#x27;-&#x27;</span>)</span><br><span class="line"><span class="comment"># 输出结果是1-2</span></span><br></pre></td></tr></table></figure>
+<p>end –&gt; 用来设定以什么结尾。默认值是换行符 \n，我们可以换成其他字符串。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">tmp1 = <span class="number">1</span></span><br><span class="line">tmp2 = <span class="number">2</span></span><br><span class="line"><span class="built_in">print</span>(tmp1，end = <span class="string">&#x27;第一次输出\n&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(tmp2,end = <span class="string">&#x27;\n先换行,第二行输出&#x27;</span>)</span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">输出结果：</span></span><br><span class="line"><span class="string">1第一次输出</span></span><br><span class="line"><span class="string">2</span></span><br><span class="line"><span class="string">第二次输出</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+<p>file –&gt; 要写入的文件对象。<br>flush –&gt; 输出是否被缓存通常决定于 file，但如果 flush 关键字参数为 True，流会被强制刷新。</p>
+<p>Python中进行格式化输出时，有三种方式：占位符%输出、format格式化、f-String格式化。<br>例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># %占位符输出方式</span></span><br><span class="line">name = <span class="string">&quot;Lehuang&quot;</span></span><br><span class="line">age = <span class="number">19</span></span><br><span class="line">height = <span class="number">1.68</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;我是%s,我今年%d岁,身高%fm&quot;</span> % (name,age,height))</span><br><span class="line"></span><br><span class="line"><span class="comment"># format格式化输出</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;我是&#123;&#125;，我今年&#123;&#125;岁,身高&#123;&#125;m&quot;</span>.<span class="built_in">format</span>(name,age,height))</span><br><span class="line"></span><br><span class="line"><span class="comment"># f-String格式化</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;我是<span class="subst">&#123;name&#125;</span>,我今年<span class="subst">&#123;age&#125;</span>岁,身高<span class="subst">&#123;height&#125;</span>m&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出 我是Lehuang,我今年19岁,身高1.68m</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;我是<span class="subst">&#123;name&#125;</span>,我今年<span class="subst">&#123;age+<span class="number">1</span>&#125;</span>岁,身高<span class="subst">&#123;height:&lt;<span class="number">10.2</span>f&#125;</span>m&quot;</span>)</span><br><span class="line"><span class="comment"># f-String可以进行格式控制，比如age+1，和保留两位小数及宽度为10和进行左对齐等操作</span></span><br><span class="line"><span class="comment"># 对齐方式（&lt;左对齐、&gt;右对齐、^居中）和宽度需要放在精度（.2f）之前，正确的语法顺序是：[对齐][宽度].[精度][类型]。</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>在Python中代码缩进是十分重要的，这并不像C++和Java那样用大括号括住之后，缩进就不再重要。Python通过缩进判断代码块的归属关系。<br>例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># if-else嵌套</span></span><br><span class="line">flag = true</span><br><span class="line"><span class="keyword">if</span>(flag) </span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;true&quot;</span>)</span><br><span class="line"><span class="keyword">else</span> </span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;false&quot;</span>)</span><br><span class="line"><span class="comment"># for循环</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">10</span>):</span><br><span class="line">    <span class="comment"># 循环体</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;循环体内&quot;</span>)</span><br><span class="line"><span class="comment"># 此处不再属于循环体内</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;循环体外&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>在Python中，#代表单行注释，若要使用多行注释要以三个双引号把多行内容引用起来。<br>例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这是单行注释</span></span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    这是多行注释</span></span><br><span class="line"><span class="string">    可以进行多行的注释操作</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Python的变量"><a href="#Python的变量" class="headerlink" title="Python的变量"></a>Python的变量</h2><p>变量是在程序运行时，能储存计算结果或能表示值的抽象概念。<br>在Python中，变量的定义也十分简洁，无需作者定义数据类型，直接赋值即可。<br>需要注意的是，变量是没有类型的，变量存储的数据是有类型的。<br>例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 变量的初始化及赋值</span></span><br><span class="line">a = <span class="number">1</span></span><br><span class="line">b = <span class="number">2.0</span></span><br><span class="line">c = <span class="number">2.00</span></span><br><span class="line">d = <span class="string">&quot;这是一个字符串&quot;</span></span><br><span class="line"><span class="comment"># type()语句可以得到数据的类型</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(a))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(b))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(c))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(d))</span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">输出结果为：</span></span><br><span class="line"><span class="string">&lt;class &#x27;int&#x27;&gt;</span></span><br><span class="line"><span class="string">&lt;class &#x27;float&#x27;&gt;</span></span><br><span class="line"><span class="string">&lt;class &#x27;float&#x27;&gt;</span></span><br><span class="line"><span class="string">&lt;class &#x27;str&#x27;&gt;</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+<p>其中有意思的是，Python中的int类型是自带高精度的，无需像C++那样考虑精度问题，也无需像JAVA那样使用BigInteger特殊类来解决高精度问题。<br>在Python中float代表的是浮点型，并不区分单精度和双精度。<br>在Python中，常见的类型转换语句为：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">100.00</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(num))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(<span class="built_in">int</span>(num)))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(<span class="built_in">float</span>(num)))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(<span class="built_in">str</span>(num)))</span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">这段代码的输出是：</span></span><br><span class="line"><span class="string">&lt;class &#x27;float&#x27;&gt;</span></span><br><span class="line"><span class="string">&lt;class &#x27;int&#x27;&gt;</span></span><br><span class="line"><span class="string">&lt;class &#x27;float&#x27;&gt;</span></span><br><span class="line"><span class="string">&lt;class &#x27;str&#x27;&gt;</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+<p>需要注意的是int() float() str()都是带有返回值的，并不是执行完int(num)之后，num存储的数据就永久变为了int类型，即只是在执行int(num)语句时转换为了int类型。<br>类型转换也不是万能的，对于字符串的转换需要注意的是:1.任何类型，都可以通过str()，转换成字符串。2.字符串内必须真的是数字，才可以将字符串转换为数字。<br>对于浮点数的转换，当浮点数转换为整数时，会直接舍去小数部分，使用时要注意精度丢失。</p>
+<p>Python中标识符一样有着命名规则，与C++和JAVA同样有着：内容限制、大小写敏感、不可使用关键字。<br>在标识符的命名中只允许出现：英文、中文、数组以及下划线(_)其余任何内容都不被允许，虽然支持中文，但并不推荐使用中文命名，与C++和JAVA相同，Python也不允许变量以数字开头。</p>
+<p>运算符方面，Python中大多运算符都是熟知的，与C++和JAVA相同的，但是仍有区分。<br>加减乘除都是没有区分的，使用方式都是相同的，但是整除和指数运算并不相同，在Python中，&#x2F;&#x2F;代表整除，舍去余数。**代表指数运算，比如当a&#x3D;10，b&#x3D;20时，a**b代表10的20次方。<br>例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">9</span></span><br><span class="line">b = <span class="number">2</span></span><br><span class="line"><span class="comment"># 9/2 = 4.5</span></span><br><span class="line"><span class="built_in">print</span>(a/b)</span><br><span class="line"><span class="comment"># 9//2 = 4</span></span><br><span class="line"><span class="built_in">print</span>(a//b)</span><br><span class="line"><span class="comment"># 2的9次方为512</span></span><br><span class="line"><span class="built_in">print</span>(b**a)</span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">输出结果为：</span></span><br><span class="line"><span class="string">4.5</span></span><br><span class="line"><span class="string">4</span></span><br><span class="line"><span class="string">512</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/10/27/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" rel="prev" title="第一篇博客文章">
+                  <i class="fa fa-angle-left"></i> 第一篇博客文章
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Unique_lehuang</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
